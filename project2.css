@@ -1,0 +1,477 @@
+body {
+    font-family: "IBM Plex Sans", Arial, sans-serif;
+
+
+}
+.sidebar {
+    position: absolute;
+    width: 350px;
+    top: 0;
+    left: 0;
+    height: 90vh;
+    background: rgba(255, 255, 255, 0.708);
+    justify-content: center;
+    text-align: center;
+    backdrop-filter: blur("10px");
+    display: none;
+    transition: 0.5s;
+    overflow-y: auto;
+
+}
+.sidebar.active{
+    display: flex;
+    top: 0;
+    left: 0;
+}
+.sidebar img{
+    justify-content: center;
+    padding-top: 1.8rem;
+    transform: translateX(-1rem);
+    
+}
+#img2{
+    position: absolute;
+    right:0;
+}
+.sidebar ul{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    margin-top: 2rem;
+    font-size: larger;
+
+}
+.sidebar ul li{
+    list-style: none;
+    padding:10px;
+    width:250px;
+}
+.sidebar ul li button {
+    text-decoration: none;
+    color: white;
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    background: rgb(21, 41, 21);
+    width:100%;
+    padding:10px;
+
+
+}
+.sectionA {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    position: fixed;
+    z-index: 1000;
+    width:100%;
+    height:50px;
+    background-color: white;
+    top:0;
+}
+
+
+.navigations {
+    flex-direction: row;
+    margin-left: 30rem;
+    cursor: pointer;
+}
+#nags{
+    background: transparent;
+
+}
+#navigas{
+    position: relative;
+}
+.drops {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-left: -10px;
+    gap:1rem;
+    margin-top:1rem;
+    display: none;
+    background-color: whitesmoke;
+}
+.drops a{
+    text-decoration: none;
+    color:black;
+    font-size: larger;
+    padding-right: 1.5rem;
+    height:50px;
+    width:100px;
+    text-align: center;
+    justify-content: center;
+
+}
+#fagsdrops{
+    position: relative;
+}
+#navigas button{
+    background: transparent;
+    border:none;
+    font-size: large;
+}
+.drops.active{
+    display: flex;
+}
+
+#navigas span{
+    display: flex;
+    flex-direction: column;
+}
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-left: 2rem;
+    gap:1rem;
+    margin-top:1rem;
+    display: none;
+}
+.dropdown a{
+    text-decoration: none;
+    color:green;
+    font-size: larger;
+    padding-right: 1.5rem;
+    gap:1rem;
+
+}
+.dropdown.active{
+    display: flex;
+}
+.login a{
+    text-decoration:none;
+    color:black;
+    font-size: larger;
+}
+.signup a{
+    text-decoration: none;
+    color:black;
+    font-size: larger;
+
+
+}
+
+.sectionB {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-image: url(./images/BgForex\ MONI.jpg);
+    position: relative;
+    /* filter: blur(10px); */
+    z-index: -1;
+    width: 100%;
+    height: 80vh;
+}
+
+.sectB{
+    z-index: 1;
+    background:rgba(0, 0, 0, 0.59) ;
+    height:100%;
+    width:100%;
+    position: absolute;
+    align-content: center;
+    text-decoration: none;
+    color:white;
+    font-size:larger;
+
+}
+
+.sectionB button{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 9px;
+    width: 130px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.sectionC {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    margin: 2rem 0 2rem 0;
+    justify-content: space-between;
+    gap: 5rem;
+    text-align: center;
+
+}
+
+.sectionD {
+    display: flex;
+    flex-direction: row;
+    margin: 7rem 2rem 5rem 8rem;
+}
+
+.sectionD img {
+    height: 350px;
+    animation: flipInX 3s;
+    
+
+}
+
+.sectionD .text {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 5rem;
+    font-size: 16px;
+    animation: text 8s;
+
+
+}
+
+.sectionD h2 {
+    font-size: xx-large;
+    text-align: center;
+}
+
+.sectionD button {
+    padding: 10px;
+    width: 180px;
+    transform: translateX(200px);
+    border-radius: 9px;
+    border: 1px solid rgb(74, 74, 222);
+    text-decoration: none;
+    color: rgb(62, 62, 202);
+}
+
+.sectionE {
+    background: linear-gradient(245.59deg, rgba(255, 0, 92, 0.4) 2.69%, rgba(173, 0, 255, 0) 72.17%);
+    display: flex;
+    background-color: rgba(0, 0, 0, 10);
+    flex-direction: row;
+    height: 500px; 
+}
+
+.sectionE .text {
+    width: 750px;
+    text-decoration: none;
+    color:white;
+    font-size: larger;
+    margin: 5rem;
+}
+
+.sectionE img {
+    width: 450px;
+}
+
+.sectionE h2 {
+    /* padding-left: 2rem; */
+    padding-bottom: 15px;
+    font-size: 2.5rem;
+}
+
+.sectionF {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    
+}
+
+.sectionF h2 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+.sectionF .boxes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 1rem 2rem 2rem 2rem;
+
+}
+
+.boxes div {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: space-between;
+    background-color: rgb(1000, 1000, 600);
+    margin: 1rem;
+    border-radius: 35px;
+    border: 3px solid white;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sectionG {
+    background-image: url(./images/Gradient.webp);
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    width:98%;
+    height:520px;
+}
+
+.sectionG .text {
+    text-decoration: none;
+    color: white;
+    margin: 8rem;
+
+}
+.sectionG img{
+    width:300px;
+    height:380px;
+    padding:3rem 12rem 2rem 2rem;
+}
+
+.sectionG h2 {
+    font-size: 2rem;
+}
+
+.sectionH {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: whitesmoke;
+    height: 350px;
+}
+.deep{
+    display: flex;
+    flex-direction: column;
+    position:relative;
+    gap:3rem;
+    display: none;
+    background-color:white; 
+}
+.deep p{
+    text-decoration: none;
+    color:black;
+    font-size: large;
+    padding-right: 1.5rem;
+    width:550px;
+    justify-content: center;
+}
+.deep.active{
+    display:flex;
+}
+#fagsdrops span{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+
+}
+
+
+.sectionH h2 {
+    font-size: xx-large;
+}
+
+.sectionH .fags {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15rem;
+}
+
+.sectionH .fags div select{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 23px;
+    width: 550px;
+    font-size: xx-large;
+
+}
+.sectionI {
+    display: flex;
+    flex-direction: column;
+
+}
+.sectionI {
+    animation: text 8s;
+
+}
+
+.sectionI h2 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+.sectionI .reviews {
+    display: flex;
+    flex-direction: row;
+    margin: 2rem 9rem 2rem 10rem;
+    text-align: center;
+    gap: 2rem;
+}
+
+.sectionI img {
+    border-radius: 40px;
+    animation: imgs 6s;
+
+}
+
+.sectionJ {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+    background-image: url(./images/World.webp);
+    background-position:cover;
+    width: 88%;
+    padding: 6rem;
+}
+
+.sectionJ h2 {
+    font-size: xx-large;
+}
+
+.sectionJ span {
+    font-size: x-large;
+}
+
+.sectionJ .countries {
+    display: grid;
+    grid-template-columns: repeat(4, 3fr);
+    margin: 4rem 10rem 2rem 0rem;
+
+}
+
+.sectionK {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* justify-content: space-between; */
+    gap: 30rem;
+    margin: 2rem;
+
+}
+
+.sectionK .last {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 9px;
+
+}
+
+.sectionK span {
+    font-size: x-large;
+    padding-bottom: 1rem;
+}
+
+.sectionK a {
+    text-decoration: none;
+    color: green;
+}
+@media screen and (max-width: 768px){
+   .sectionA{
+    display: none;
+   } 
+   .navigations{
+    display: none;
+   }
+   #navigas{
+    display: none;
+   }
+    
+
+
+
+}

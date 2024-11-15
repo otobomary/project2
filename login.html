@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>login page</title>
+<link rel="stylesheet" href="./login.css" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,
+300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;
+1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="box">
+            <div class="imgg">
+                <img src="./images/logo.png" width="140px" />
+                <a>Sign In</a>
+            </div>
+            <div class="form">
+                <form>Email</form>
+                <input type="">
+                <span style="color:red" id="usererror"></span>
+                <form>Password</form>
+                <input type="password">
+                <span style="color:red" id="passworderror"></span>
+            </div>  
+            <div>
+            <button onclick="location.href='http://127.0.0.1:5500/project.html'">Login</button>
+            <div class="create">
+            <span>Don't have an account?</span>
+            <a style="color:green" href="http://127.0.0.1:5500/signup.html">Sign Up</a>
+            </div>
+            <p style="color:green">Lost your Password</p>
+            </div>
+        </div>
+        <script>
+            const userDetails = []
+            const form = document.getElementById("form");
+            const error = document.getElementById("error");
+            const email = document.getElementById("email");
+            const password = document.getElementById("password");
+
+            form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            let isValidate= true;
+
+            if (email.value !== localStorage.getItem("email", email.value)) {
+            error.innerHTML = "Incorrect email";
+            error.style.color = "red";
+             isValidate = false;
+  
+            }
+            if (password.value !== localStorage.getItem("password", password.value)) {
+                error.innerHTML = "incorrect password";
+                error.style.color = "red";
+                isValidate = false;
+            } 
+
+
+        })
+
+
+
+
+        </script>
+    
+</body>
+
+</html>

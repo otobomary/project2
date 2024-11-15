@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Signup page</title>
+<link rel="stylesheet" href="./signup.css" />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,
+300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;
+1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="box">
+            <div class="imgg">
+                <img src="./images/logo.png" width="140px" />
+                <a>Sign Up</a>
+            </div>
+            <div class="form">
+                <form action="/" id="form">
+                First Name
+                <input type="" id="firstname">
+                Last name
+                <input type="" id="lastname">
+                <span style="color:red" id="error"></span>
+                 Username 
+                <input type="" id="username">
+                <span style="color:red" id="usererror"></span>
+                Date of Birth
+                <input type="date" id="dob">
+                <span style="color:red" id="doberror"></span>
+                Email
+                <input type="email" id="email">
+                <span style="color:red" id="emailerror"></span>
+                Password
+                <input type="password" id="password">
+                <span style="color:red" id="passworderror"></span>
+                Confirm Password
+                <input type="password" id="confirmpassword">
+                <span style="color:red" id="comfirmpassworderror"></span>
+
+            </div>
+            <div>
+                <button type="submit"> Create my Account</button>
+            </div>
+            </form>
+            <div class="signup">
+            <p>Already have an Account?</p> 
+            <a href="http://127.0.0.1:5500/login.html">Sign In</a>
+            </div>
+            
+   <script>
+    const userDetails =[];
+    const form = document.getElementById("form");
+    const error = document.getElementById("error");
+    const fname = document.getElementById("firstname");
+    const lname = document.getElementById("lastname");
+    const username = document.getElementById("username");
+    const usererror = document.getElementById("usererror");
+    const dob = document.getElementById("dob");
+    const doberror = document.getElementById("doberror");
+    const email = document.getElementById("email");
+    const emailerror = document.getElementById("emailerror");
+    const password = document.getElementById("password");
+    const passworderror = document.getElementById("passworderror");
+    const confirmpassword = document.getElementById("confirmpassword");
+    const confirmpassworderror = document.getElementById("comfirmpassworderror");
+
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault()
+            let isValidate = true
+            
+            if(fname.value ===''){
+                error.innerHTML = "enter your name";
+                idvalidate = false
+            }
+            if(username.value ===''){
+                usererror.innerHTML = "choose your username";
+                isValidate = false
+            }
+            if(dob.value ===''){
+                usererror.innerHTML = "input your dob";
+                isValidate = false
+            }
+            if(email.value ===''){
+                usererror.innerHTML = "input your email";
+                isValidate = false
+            }
+            if(password.value ===''){
+                usererror.innerHTML = "password empty";
+                isValidate = false
+            }
+            if(confirmpassword.value ===''){
+                usererror.innerHTML = "input your correct password";
+                isValidate = false
+            }
+
+            if(isValidate){
+                let user = userDetails.push(fname.value, username.value, dob.value, email.value, password.value, confirmpassword.value);
+                localStorage.setItem("fullname", fname.value);
+                localStorage.setItem("username", username.value);
+                localStorage.setItem("dob", dob.value);
+                localStorage.setItem("email", email.value);
+                localStorage.setItem("password", password.value);
+                localStorage.setItem("confirmpassword", confirmpassword.value);
+                console.log(userDetails);
+                window.location.href="./login.html"
+            }
+
+        })
+
+   </script>         
+</body>
+</html>

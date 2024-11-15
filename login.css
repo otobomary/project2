@@ -1,0 +1,50 @@
+body{
+    background-color: whitesmoke;
+}
+.box{
+    margin:auto;
+    background-color: white;
+    width:31%;
+    height:550px;
+    margin-top:3rem;
+    padding: 1rem;
+    
+}
+.box .imgg{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: x-large;
+}
+.form input{
+    border-radius: 15px;
+    padding:1rem;
+    margin:9px;
+    width:400px;
+    font-size: larger;
+    border:1px solid rgb(220, 218, 218);
+
+
+}
+.box button{
+    justify-content: center;
+    align-items:  center;
+    text-align: center;
+    width:430px;
+    padding:15px;
+    margin:9px;
+    border-radius: 16px;
+    background-color:green;
+    text-decoration: none;
+    color:white; 
+}
+.create{
+    display: flex;
+    flex-direction: row;
+    gap:9px;
+    font-size: larger;
+    cursor: pointer;
+}
+
